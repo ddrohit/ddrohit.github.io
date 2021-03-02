@@ -1,40 +1,257 @@
 <html>
- <head>
-   <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <style>
-    body{
-     font-family: 'Mountains of Christmas', cursive;
-	 color:black;
-	 background-color:white;
-    }
-	body > div{
-		font-size:25px;
-	}
-	.page{
-	    padding: 10px;
-	}
-	a{
-		text-decoration:none;
-		color:pink;
-		font-size:20px;
-	}
-	center > div{
-		padding-top:20px;
-	}
-   </style>
- </head>
- <body>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            
+            color: black;
+            background-color: white;
+        }
+        body > div > center{
+            font-family: 'Mountains of Christmas', cursive;
+        }
+
+            body > div {
+                font-size: 25px;
+            }
+
+        .page {
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: pink;
+            font-size: 20px;
+        }
+
+        center > div {
+            padding-top: 20px;
+        }
+        .block{
+            margin-left:30px;
+        }
+        @-webkit-keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.By{
+    float:right;
+}
+@-webkit-keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+    </style>
+</head>
+<body>
     <div class="page">
-		<div>
-			<center> Problem Rock Paper scissors </center>
-		</div>
-		<br>
-		<div>
-		<center>
-			
-		</center>
-		</div>
-	</div>
- </body>
+        <div>
+            <center class="animated bounce"> <u><b>A Serious Issue Between Ravi And Ram </b></u></center>
+        </div>
+        <br>
+        <div >
+            <div>
+                <u><b>Question</b></u>:-<br /><br />
+                <div class="block animated bounceInLeft">
+                    After a long planning, two friends Ravi and Gopi decided to go to a movie on holiday, cool !! right. But here is the problem, Both of them
+                    are having different opinions on 2 different movies and are unable to deicde on which one to go, so they came up with a rock paper scissors game.
+                    Where they will play 'n' number of games and the wining one will choose the movie to goo.. please help them to sort out this issue by telling them the result.
+                    <br /><br />
+                </div>
+                <div class="block animated bounceInLeft">
+                    So here are the rules.<br /><br />
+
+                    There will be n rounds and for each round one can chosse [ Rock - R or Scissors - S or Paper - P ] all are in Capital.<br /><br />
+
+                    1) Rock (R) beats Scissors (S).<br />
+                    2) Scissors (S) beats Paper (P).<br />
+                    3) Paper (P) beats Rock (R).<br /><br />
+                </div>
+                <u><b>Input Format :-</b></u><br />
+                <br /><br />
+                <div class="block animated bounceInLeft">
+                    First Line  :- number of rounds (n).<br />
+                    Second Line  :- (n) number of moves by Ravi each consists of ( R or S or P ).<br />
+                    Third Line :- (n) number of moves by Gopi each consists of ( R or S or P ).<br />
+
+                    print "Ravi wins." if Ravi wins without double quotation marks<br />
+                    print "Gopi wins." if Gopi wins without double quotation marks<br />
+                    print "No Result Play Agian." if its a draw<br />
+                </div>
+                <br />
+                <u><b>Sample Input :-</b></u><br />
+                <br />
+                <div class="block animated bounceInLeft">
+                    3<br />
+                    R R R<br />
+                    S P S<br />
+                    <br />
+                </div>
+                <b><u>Sample Output :-</u></b><br />
+                <br />
+                <div class="block animated bounceInLeft">
+                    Ravi Wins<br />
+                </div>
+                <br />
+                <b><u>Explanation </u>:-</b><br />
+                <br /><br />
+                <div class="block animated bounceInLeft">
+                    * In first round ravi chooses Rock(R) and Gopi chooses (S) so Ravi Wins first round.<br />
+                    * In Second round ravi chooses Rock(R) and Gopi chooses (p) so Gopi Wins Second round<br />
+                    * In Final round ravi chooses Rock(R) and Gopi chooses (S) so Ravi Wins Final round.<br />
+                    * So Ravi wins 2 round and Gopi Wins 1 round so the output is Ravi wins.<br />
+                </div>
+                <br /><br /><br />
+                <br /><br /><br />
+                <div class="By animated bounceInLeft">
+                    Framed by rohit.dasamantharao<br />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
